@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#">
+        <img src="/assets/cakeLogo.png" class="logo" alt="">
+      </a>
+      <ul>
+
+        <li>
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <a href="#">Menu</a>
+        </li>
+
+        <li>
+          <a href="#">What's new</a>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>
+          A melhor <span>Doceria</span><br>da cidade!
+        </h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus voluptatem explicabo
+          deserunt cum saepe odio facilis consequuntur</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="imgBox">
+        <img src="/assets/cupcakeStars.png" class="starbucks" alt="">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li>
+        <a href="#">
+          <img src="/assets/cupcakeStars.png"
+            onclick="imgSlider('/assets/cupcakeStars.png');changeCircleColor('#b2838d')" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/assets/cupcake1.png" onclick="imgSlider('/assets/cupcake1.png');changeCircleColor('#ff3366')"
+            alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/assets/granulado.png" onclick="imgSlider('/assets/granulado.png');changeCircleColor('#e5989b')"
+            alt="">
+        </a>
+      </li>
+    </ul>
+
+    <ul class="sci">
+      <li>
+        <a href="#">
+          <img src="/assets/facebook.png" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/assets/twitter.png" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <img src="/assets/instagram.png" alt="">
+        </a>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="cupcakes">
+    <div class="category__container container grid">
+      <div class="card">
+        <img src="assets/capcakecenoura.png" alt="" class="category__img">
+        <h3 class="category__title">Chocolate e Cenoura </h3>
+        <p class="category__description">Os clássicos nunca saem de moda</p>
+      </div>
+      <div class="card">
+        <img src="assets/cupcake-casadinho-cupcakes-florianopolis.png" alt="" class="category__img">
+        <h3 class="category__title">Casadinho</h3>
+        <p class="category__description">O Gostinho de festas</p>
+      </div>
+      <div class="card">
+        <img src="assets/Regular-cupcake-mochalatte-300x300.png" alt="" class="category__img">
+        <h3 class="category__title">Mochalatte</h3>
+        <p class="category__description">Os mais deliciosos cupcakes goumert</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/cupcakeStars.png" alt="" class="category__img">
+        <h3 class="category__title">Fantasy</h3>
+        <p class="category__description">O sucesso das festas</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/granulado.png" alt="" class="category__img">
+        <h3 class="category__title">Granulado</h3>
+        <p class="category__description"> Gostinho de festas</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/mentabonita.png" alt="" class="category__img">
+        <h3 class="category__title">Menta Match</h3>
+        <p class="category__description">O Gostinho que refresca</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="destaques">
+    <div>
+      <a href="#">
+        <img src="/assets/cupcakeStars.png" class="destaque-cakes" alt="">
+      </a>
+    </div>
+    <h1 class="text2">O queridinho<br>da semana!</h1>
+    <div class="circle_2">
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color) {
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+  </script>
+</body>
+
+</html>
